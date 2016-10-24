@@ -29,6 +29,5 @@ D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\bin\De
 D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\bin\DemoApp.pdb
 D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\obj\Debug\AngularFundamentals.csprojResolveAssemblyReference.cache
 D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\obj\Debug\DemoApp.dll
 D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\obj\Debug\DemoApp.pdb

@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="eventsApp">
+<head>
+    <title>Event Registration</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="/Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Content/app.css" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" href="./EventDetails.html">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your Name <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Billing</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Logoff</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div ng-controller="EventController">
+            <img ng-src="{{event.imgUrl}}" alt="{{event.name}}" />
+            <div class="row">
+                <div class="col-md-11">
+                    <h2 ng-bind-template="{{event.name}} - {{event.date}}"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div><strong>Date:</strong>{{event.date}}</div>
+                    <div><strong>Time:</strong>{{event.time}}</div>
+                </div>
+                <div class="col-md-4">
+                    <address>
+                        <strong>Address:</strong><br />
+                        {{event.location.address}}<br />
+                        {{event.location.city}}, {{event.location.province}}
+                    </address>
+                </div>
+            </div>
+
+            <hr />
+            <h3>Sessions</h3>
+            <ul>
+                <li ng-repeat="session in event.sessions">
+                    <div class="row">
+                        <div class="col-md-1 well votingWidget">
+                            <div class="votingButton" ng-click="upVoteSession(session)">
+                                <i class="glyphicon glyphicon-chevron-up"></i>
+                            </div>
+                            <div class="badge">
+                                <div>{{session.upVoteCount}}</div>
+                            </div>
+                            <div class="votingButton" ng-click="downVoteSession(session)">
+                                <i class="glyphicon glyphicon-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="well col-md-9">
+                            <h4 class="well-sm">{{session.name}}</h4>
+                            <h6 style="margin-top:-10px">{{session.creatorName}}</h6>
+                            <span>Duration: {{session.duration}}</span><br />
+                            <span>Level: {{session.level}}</span>
+                            <p>{{session.abstract}}</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/Scripts/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/Scripts/underscore.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/Scripts/angular.js"></script>
+    <script type="text/javascript" src="/Scripts/angular-sanitize.js"></script>
+    <script type="text/javascript" src="/App/app.js"></script>
+    <script type="text/javascript" src="/App/Controllers/EventController.js"></script>
+</body>
+</html>
