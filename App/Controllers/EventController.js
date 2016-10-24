@@ -2,6 +2,7 @@
 
 eventsApp.controller('EventController',
     function EventController($scope) {
+        $scope.snippet = '<span style="color:red">Hello World!</span>';
         $scope.event = {
             name: 'Elaine Beçudinha',
             date: '23/10/2016',

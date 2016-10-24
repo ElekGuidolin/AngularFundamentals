@@ -57,6 +57,7 @@
     <div class="container">
         <div ng-controller="EventController">
             <img ng-src="{{event.imgUrl}}" alt="{{event.name}}" />
+            <div ng-bind-html="snippet">Baby Girl</div>
             <div class="row">
                 <div class="col-md-11">
                     <h2 ng-bind-template="{{event.name}} - {{event.date}}"></h2>
