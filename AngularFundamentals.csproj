@@ -70,6 +70,7 @@
     <Content Include="App\Controllers\EditEventController.js" />
     <Content Include="App\Controllers\EventController.js" />
     <Content Include="App\directives.js" />
+    <Content Include="App\Services\EventData.js" />
     <Content Include="EventDetailsLearn.html" />
     <Content Include="EventDetails.html" />
     <Content Include="App\filters.js" />
@@ -905,7 +906,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\Services\" />
     <Folder Include="Test\" />
   </ItemGroup>
   <PropertyGroup>
