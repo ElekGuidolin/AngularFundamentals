@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/Content/bootstrap.min.css" />
     <link rel="stylesheet" href="/Content/app.css" />
+    <style></style>
 </head>
 <body ng-cloak>
     <nav class="navbar navbar-inverse navbar-static-top">
@@ -54,16 +55,17 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+    <style>.form-control.ng-invalid.ng-dirty{background-color:pink;}</style>
     <div ng-controller="EditEventController" style="padding-left:20px; padding-right:20px">
         <div class="container">
             <h1>New Event</h1>
             <hr />
-            <form>
+            <form name="newEventForm">
                 <div class="form-group">
                     <label for="txtEventName">Event Name:</label>
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text" id="txtEventName" class="form-control" ng-model="event.name" placeholder="Name of your event..." />
+                            <input type="text" id="txtEventName" class="form-control" required ng-model="event.name" placeholder="Name of your event..." />
                         </div>
                     </div>
                 </div>
@@ -71,7 +73,7 @@
                     <label for="txtEventDate">Event Date:</label>
                     <div class="row">
                         <div class="col-md-4">
-                            <input type="text" id="txtEventDate" class="form-control" ng-model="event.date" placeholder="format (dd/mm/yyyy)..." />
+                            <input type="text" id="txtEventDate" class="form-control" required ng-pattern="/\d\d/\d\d/\d\d\d\d/" ng-model="event.date" placeholder="format (dd/mm/yyyy)..." />
                         </div>
                     </div>
                 </div>
@@ -119,7 +121,7 @@
                 <br />
                 <br />
 
-                <button type="submit" ng-click="saveEvent(event)" class="btn btn-primary">Save</button>
+                <button type="submit" ng-disabled="newEventForm.$invalid" ng-click="saveEvent(event, newEventForm)" class="btn btn-primary">Save</button>
                 <button type="button" ng-click="cancelEdit()" class="btn btn-default">Cancel</button>
             </form>
         </div>
