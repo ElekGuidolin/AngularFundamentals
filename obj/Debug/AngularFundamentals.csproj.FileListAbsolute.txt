@@ -31,3 +31,10 @@ D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\bin\Mi
 D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\obj\Debug\DemoApp.dll
 D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\obj\Debug\DemoApp.pdb
+C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\bin\DemoApp.dll.config
+C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\bin\DemoApp.dll
+C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\bin\DemoApp.pdb
+C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\obj\Debug\AngularFundamentals.csprojResolveAssemblyReference.cache
+C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\obj\Debug\DemoApp.dll
+C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\obj\Debug\DemoApp.pdb
