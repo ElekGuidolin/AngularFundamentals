@@ -34,6 +34,8 @@ D:\Estudo\Pluralsight\AngularPath\AngularFundamentals\AngularFundamentals\obj\De
 C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\bin\DemoApp.dll.config
 C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\bin\DemoApp.dll
 C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\bin\DemoApp.pdb
-C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\obj\Debug\AngularFundamentals.csprojResolveAssemblyReference.cache
+C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\obj\Debug\AngularFundamentals.csprojAssemblyReference.cache
+C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\obj\Debug\AngularFundamentals.csproj.CoreCompileInputs.cache
+C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\obj\Debug\AngularFundamentals.csproj.CopyComplete
 C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\obj\Debug\DemoApp.dll
 C:\Estudo\PluralSight\Angular\01_02_AngularFundamentals\Src\obj\Debug\DemoApp.pdb
